@@ -40,7 +40,7 @@ namespace PatikaCrazyMusiciansAPI.Controllers
             return Ok(musician);
         }
 
-        // GET: api/musicians/search?fullName=Ali
+        // GET: api/musicians/search?fullName={name}
         [HttpGet("search")]
         public ActionResult<List<Musician>> Search([FromQuery] string fullName)
         {
